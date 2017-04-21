@@ -62,6 +62,9 @@
                     <li class="page-scroll">
                         <a href="#about">About us</a>
                     </li>
+                    <li class="page-scroll">
+                        <a href="https://plantmodelling.shinyapps.io/mecha/" target="_blank"><i class="fa fa-external-link"></i>  Try it online</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -77,14 +80,18 @@
                     <img class="img-responsive" src="img/mecha1.png" alt="">
                     <div class="intro-text">
                         <span class="name">MECHA</span>
+                        <h2>Model of Explicit Cross-section Hydraulic Architecture</h2>
+                        </br></br>
+                        <hr class="star-light">
+                        </br></br>
                             <a href="https://github.com/MECHARoot/MECHA" class="btn btn-lg btn-default" target="_blank">
-                                <i class="fa fa-external-link"></i>  View source code
+                                <i class="fa fa-github"></i>  View source code
                             </a>
                             <a href="https://plantmodelling.shinyapps.io/mecha/" class="btn btn-lg btn-primary" target="_blank">
                                 <i class="fa fa-external-link"></i>  Try it online
                             </a>
-                        </br></br>
-                        <hr class="star-light">
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -104,10 +111,12 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-1">
-                    <img class="img-responsive" src="img/mecha2.png" alt="">
+                    <img class="img-responsive" src="img/mecha.png" alt="">
                 </div>
                 <div class="col-lg-5 col-lg-offset-1">
-                    <p>MECHA is blablabla</p>
+                    <p>MECHA is an explicit cross-section model of the root hydraulic anatomy which connects hydraulic concepts across scales. </p>
+
+                    <p>The model computes horizontal water flow at the level of individual cells, quantifies the contribution of water composite pathways, and predicts root radial permeability (kr), using detailed anatomical descriptions and experimental data on the permeability of cell walls (kw), membranes (Lp) and the conductance of individual plasmodesmata (KPD).</p>
                 </div>
             </div>
         </div>
@@ -124,25 +133,51 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
 
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <p>MECHA was coded in Python,  and is therefore platform independant. It can be run on Windows, Linux and MacOS</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1">
+
+                    <h4>1. Download MECHA</h4>
+                    <p>The source code of MECHA is available on github: <a href="https://github.com/MECHARoot/MECHA">https://github.com/MECHARoot/MECHA</a></p>
+                    <p>The github repo also contain example parameter files needed to run MECHA. You do not need your own data to try it out.</p>
+                        
+
+                    <h4>2. Install Python</h4>
+                    <p>The first step before running MECH is to install a working version for Python. Installation of Python are available here: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
                            
                 </div>
-                <div class="col-lg-6">
-                     <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    <p>
+                <div class="col-lg-5 col-lg-offset-1 ">
+                     <h4>3. Install required libraries</h4>
+                     <p>MECHA is built upon a handfull of external libraries. You will need to install them before using the model.
+                     <ul>
+                        <li><code>numpy</code></li>
+                        <li><code>scipy</code></li>
+                        <li><code>networkx</code></li>
+                        <li><code>lxml</code></li>
+                     </ul>
+                     </p>
+                     <p>These libraries can be install using <a href="https://pypi.python.org/pypi/pip">pip</a>. In the Terminal or Console, enter:</p>
+                     <pre>
+pip install numpy
+pip install scipy
+pip install networkx
+pip install lxml</pre>
+
+                    <h4>4. Run MECHA</h4>
+                    <p>In the Terminal or Console enter the following lines:</p>
+                    <pre>cd "$PATH_TO_FOLDER_CONTAINING_MECHA"
+python mecha_all.py</pre>
+
                 </div>
 
 
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <hr class="star-light">
                     <p>Feeling adventurous? Check out the source code.</p>
-                    <a href="https://github.com/MECHARoot/MECHA" class="btn btn-lg btn-outline">
-                        <i class="fa fa-external-link"></i>  View source code
+                    <a href="https://github.com/MECHARoot/MECHA" class="btn btn-lg btn-primary">
+                        <i class="fa fa-github"></i>  View source code
                     </a>
                 </div>
             </div>
@@ -160,14 +195,31 @@
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="img-responsive" src="img/mecha3.png" alt="">
+                    <img class="img-responsive" src="img/mecha2.png" alt="">
                 </div>
-                <div class="col-lg-6 col-lg-offset-1">
+                <div class="col-lg-6 ">
+                <h4>Input files</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    MECHA uses four parameters files as input, stored in the <code>/in</code> folder in the main MECHA directory:
+                    <ul>
+                        <li><code>General.xml</code> : General simulation parameters</li>
+                        <li><code>BC.xml</code> : Boundary conditions for the simulation. This is where you choose wether the soil is dry, wet, or only partially touch the root.</li>
+                        <li><code>Geometry.xml</code> : Parameters for the root section geometry. This is where you define which root section to use in the simulation.</li>
+                        <li><code>Hydraulics.xml</code> : Hydraulic parameters of the different variables in the simulation</li>
+                    </ul>
 
-                        <a type="button" class="btn btn-success" href="assets/reporters.rsml" download><i class="fa fa-download" aria-hidden="true"></i> Test reporter file</a>
-                        <a type="button" class="btn btn-success" href="assets/genes.txt" download><i class="fa fa-download" aria-hidden="true"></i> Test gene file</a></p>
+                    </p>
+                <h4>Ouput files</h4>
+                    <p>
+                    MECHA output files in a folder defined in the <code>General.xml</code> input file, under the <code>Output</code> tag. Different type of files are generated:
+                    <ul>
+                        <li><code>*.PVTK files</code> : These are geometry files that can be open in <a href="http://www.paraview.org/">Paraview</a></li>
+                        <li><code>Macro_prop_i.txt files</code> : Theses files contain synthetic informations about the simulation results. They contain the radial data.</li>
+                    </ul>
+
+                    </p>
+
+
                 </div>
             </div>
         </div>
@@ -186,19 +238,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-5">
                     <img class="img-responsive" src="img/mecha3.png" alt="">
                 </div>
                 <div class="col-lg-6 col-lg-offset-1 ">
                     <p> 
+                    MECHA was developed at the Université catholique de Louvain, in the Earth and Life Insititute, in the lab of <a href="http://www.uclouvain.be/xavier.draye">Xavier Draye</a>.</br></br> 
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    The primary developpers of the model are <a href="http://www.uclouvain.be/valentin.couvreur">Valentin Couvreur</a> and Marc Faget.</br></br>
 
-                    
+                    </p>
 
+                    <p>
                     MECHA what first used here:
 
-                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</blockquote>
+                    <blockquote>
+                        <b>A hydraulic model of root cross-section anatomy offers novel insight connecting cell hydraulic properties to quantitative composite transport</b></br>
+                        Valentin Couvreur, Marc Faget, Guillaume Lobet, Mathieu Javaux, François Chaumont and Xavier Draye<br>
+                        biorxiv, 2017 
+                    </blockquote>
                     </p>
 
                     <hr>
@@ -217,6 +275,7 @@
 
                     <hr>
                     <img src="img/ucl_logo.png" class="img-responsive img-thumbnail" style="height:70px"> 
+                    <img src="img/juelich_logo.jpg" class="img-responsive img-thumbnail" style="height:70px"> 
                 </div>
             </div>
         </div>
@@ -229,35 +288,7 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
+ 
                 </div>
             </div>
         </div>
@@ -265,7 +296,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; PAGE-Root 2017
                     </div>
                 </div>
             </div>
